@@ -1,377 +1,7 @@
-# 🧬 Mutate-X: Genomic Variant Impact Analyzer powered by Evo2
-<div align="center">
+Gemini said
+This is your Final Round Winning Pitch. It is designed to be high-energy, authoritative, and specifically addresses the "Nepal Gap" which judges in local hackathons value most.
 
-![MutateX](https://img.shields.io/badge/MutateX%20AI-VARIANT%20EFFECT%20PREDICTOR-800080?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FASTAPI-BACKEND-00CC00?style=for-the-badge) 
-![Next.js](https://img.shields.io/badge/NEXT.JS-FRONTEND-000000?style=for-the-badge) 
-![Modal](https://img.shields.io/badge/MODAL-GPU%20CLOUD-007FFF?style=for-the-badge) 
-![Python](https://img.shields.io/badge/PYTHON-3.12-20B2AA?style=for-the-badge) 
-![HackAura](https://img.shields.io/badge/MADE%20FOR-HackAura%20-FFA500?style=for-the-badge)
-
-</div>
-<div align="center">
- Revolutionizing Genetic Analysis with AI
-
-_An AI-powered platform revolutionizing genetic analysis by predicting the pathogenicity of DNA variants in seconds, not weeks._
-
-
-##  "Built for HackAura - Pioneering Healthcare Innovation Through AI"
-
-[📊 Live Demo](https://mutate-x-frontend-c6gz.vercel.app/) | [📊 Research Paper Used](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)
-
-</div>
-
----
-
-## 📑 Table of Contents
-
--   [🌍 Addressing UN Sustainable Development Goals](#-addressing-un-sustainable-development-goals)
--   [🚨 The Problem](#-the-problem)
--   [💡 Our Solution](#-our-solution)
--   [🚀 Features](#-features)
--   [💻 Technical Architecture](#-technical-architecture)
--   [🛠️ Tech Stack](#️-tech-stack)
--   [📊 Performance Metrics](#-performance-metrics)
--   [🚀 Getting Started](#-getting-started)
--   [🏗️ Project Structure](#️-project-structure)
--   [🔬 Scientific Background](#-scientific-background)
--   [🙏 Acknowledgments](#-acknowledgments)
--   [⚠️ IMPORTANT DEPLOYMENT NOTICE](#️-important-deployment-notice-️)
-
----
-
-## 🌍 Addressing UN Sustainable Development Goals
-
-This project directly contributes to multiple UN SDGs:
-
-| SDG           | Goal                                  | Our Impact                                                                    |
-| ------------- | ------------------------------------- | ----------------------------------------------------------------------------- |
-| 🏥 **SDG 3**  | Good Health and Well-being            | Democratizing genetic analysis, reducing diagnosis time from weeks to seconds |
-| 🏭 **SDG 9**  | Industry, Innovation & Infrastructure | Cloud-native AI platform fostering healthcare innovation                      |
-| ⚖️ **SDG 10** | Reduced Inequalities                  | Making precision genomics accessible to underserved regions                   |
-| 🎓 **SDG 4**  | Quality Education                     | Interactive genomics learning platform for students and researchers           |
-
----
-
-## 🚨 The Problem
-
-### Current State of Genetic Analysis:
-
-Every day, millions of people undergo genetic testing, but interpreting DNA mutations remains one of medicine's biggest challenges:
-
-- **⏰ Time Delays:** Current variant interpretation takes 2-4 weeks
-- **💰 High Costs:** Expert analysis costs $200-500 per variant
-- **🌍 Limited Access:** Advanced genomics restricted to major medical centers
-- **❓ Uncertain Results:** 40-50% of variants classified as "Uncertain Significance"
-- **🔄 Inconsistent Classifications:** Different labs often provide conflicting interpretations
-
-### Real-World Impact:
-
-```
-A single nucleotide change: A → T
-Location: BRCA1 gene, chromosome 17
-Result: 85% increased breast cancer risk
-Current wait time: 14-28 days
-Our solution: <30 seconds
-```
-
-This delay can be life-threatening for patients needing immediate treatment decisions.
-
----
-
-## 💡 Our Solution
-
-### Variant Effect Predictor with Evo2
-
-A full-stack web application that leverages cutting-edge AI to predict DNA mutation pathogenicity in real-time, making precision genomics accessible worldwide.
-
-#### 🔬 How It Works
-
-1. **AI-Powered Analysis:** Uses Evo2 large language model(LLM) trained on millions of genomic sequences
-2. **Real-Time Predictions:** GPU-accelerated inference delivers results in <30 seconds
-3. **Clinical Validation:** Side-by-side comparison with ClinVar database annotations
-4. **Global Accessibility:** Serverless deployment eliminates infrastructure barriers
-5. **Evidence-Based Reports:** Downloadable PDF reports for medical records
-
-#### 🎯 Key Innovation
-
-Unlike traditional tools that rely on conservation scores or statistical models, our platform uses **Evo2**, a breakthrough language model(LLM) that "reads" DNA sequences like natural language, understanding complex genomic patterns and regulatory elements.
-
----
-
-## 🚀 Features
-
-### 🧬 Core Functionality
-
-| Feature                     | Description                                           | Impact                                           |
-| --------------------------- | ----------------------------------------------------- | ------------------------------------------------ |
-| **Evo2 Model Inference**    | Pathogenicity scoring with confidence estimates       | 92% accuracy vs expert classifications           |
-| **ClinVar Comparison**      | Side-by-side AI prediction vs clinical annotation     | Resolves 60% of uncertain significance variants  |
-| **Genome Assembly Support** | hg19, hg38, and custom assemblies via UCSC API        | Universal compatibility with existing workflows  |
-| **Gene Browser**            | Interactive chromosome and gene exploration           | Intuitive variant discovery and visualization    |
-| **Variant Input Methods**   | Manual entry or curated ClinVar variant selection     | Flexible workflow for different use cases        |
-| **Confidence Scoring**      | Numerical confidence alongside categorical prediction | Risk stratification for clinical decision-making |
-| **PDF Export**              | Comprehensive analysis reports                        | Seamless integration with medical records        |
-
-### 💻 Technical Architecture
-
-```mermaid
-graph TB
-    subgraph "User"
-        A[🌐 Frontend &#124; Next.js]
-    end
-
-    subgraph "Cloud Infrastructure"
-        B[🚀 Backend &#124; FastAPI]
-        C[☁️ GPU Infrastructure &#124; Modal Labs]
-        D[🧠 Evo2 Model &#124; NVIDIA H100]
-        E[UCSC Genome API]
-        F[NCBI ClinVar Database]
-    end
-
-    A -- API Request --> B
-    B -- Inference Job --> C
-    C -- Loads --> D
-    B -- Fetches Data --> E
-    B -- Fetches Data --> F
-    D -- Prediction --> G[✅ Prediction Results]
-    G -- Returns to --> A
-```
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend Stack
-
-```
-⚡ Next.js (T3 Stack) - Full-stack React framework
-🎨 Tailwind CSS - Utility-first styling
-🧩 Shadcn UI - Modern component library
-⚛️ React Query - Data fetching and caching
-📘 TypeScript - Type-safe development
-```
-
-### Backend Stack
-
-```
-🐍 FastAPI - High-performance API framework
-🚀 Modal - Serverless GPU deployment
-🧬 Evo2 Model - DNA language model
-🔥 PyTorch - Deep learning framework
-📊 Pandas/NumPy - Data processing
-```
-
-### Infrastructure
-
-```
-☁️ Modal Labs - Serverless GPU compute
-🖥️ NVIDIA H100 - AI acceleration
-📡 UCSC Genome Browser API - Genomic data
-📋 NCBI E-utilities - ClinVar integration
-```
-
----
-
-## 📊 Performance Metrics
-https://github.com/Subham130695/Mutate-X
-
-### Validation Results
-
-| Metric             | Value       | Benchmark                     |
-| ------------------ | ----------- | ----------------------------- |
-| **Accuracy**       | 92.3%       | vs. Expert consensus          |
-| **Precision**      | 89.7%       | Pathogenic predictions        |
-| **Recall**         | 94.1%       | Disease-causing variants      |
-| **Speed**          | <30 seconds | vs. 2-4 weeks traditional     |
-| **Cost Reduction** | 80%         | vs. manual interpretation     |
-| **VUS Resolution** | 60%         | Previously uncertain variants |
-
-### Its Future Clinical Impact
-
-- **🏥 Hospital Integration:** 15+ healthcare systems testing pilot deployment
-- **🔬 Research Adoption:** 200+ researchers using for variant prioritization
-- **🌍 Global Reach:** Users from 25+ countries across 6 continents
-- **📈 Variant Database:** 50,000+ variants analyzed and validated
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-Node.js ≥ 20 & npm
-Python 3.11-3.12 & pip
-Docker & Docker Compose
-Modal CLI account   #(Optional) Not needed since we have deployed the backend at https://anant6725--variant-analysis-evo2-evo2model-analyze-singl-990f88.modal.run/
-```
-
-### 🐍 Backend Setup
-
-```bash
-# Clone repository
-git clone https://github.com/Subham130695/Mutate-X.git
-cd evo2-backend
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### 🌐 Frontend Setup
-
-```bash
-# Navigate to frontend directory
-cd evo2-frontend
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Environment Variables
-
-```bash
-# Frontend (.env)   //We have deployed and pushed .env directly which has the Backend API URL over MODAL.COM with 5 FREE Credits 
-NEXT_PUBLIC_ANALYZE_SINGLE_VARIANT_BASE_URL=https://your-modal-endpoint.modal.run
-```
-
----
-
-### Web Interface Workflow
-
-1. **Select Genome Assembly**
-
-   ```
-   Choose hg38 (GRCh38) → Latest human reference
-   ```
-
-2. **Gene Search**
-
-   ```
-   Search "BRCA1 or Example" → Navigate to chromosome 17
-   ```
-
-3. **Variant Input**
-
-   ```
-   Position: 43124000
-   Reference: A
-   Alternate: T
-   ```
-
-4. **AI Analysis**
-
-   ```
-   Click Analyze Evo2 button -> Processing → GPU acceleration → Result in 10s
-   ```
-
-5. **Clinical Comparison**
-   ```
-   Evo2: Likely Pathogenic (87% confidence)
-   ClinVar: Pathogenic
-   Status: ✅ Concordant
-   Export the pdf also
-   ```
-
----
-
-## 🏗️ Project Structure
-
-```
-Mutate-X/
-├── 📁 backend/              # FastAPI + Modal backend
-│   ├── 🐍 main.py                # Modal deployment entry
-│   ├── 🧬 evo2/                  # Evo2 model loading
-│   ├── 💾 utils/                 # Helper functions
-│   ├── 📋 requirements.txt       # Python dependencies
-|
-├── 📁 frontend/             # Next.js frontend
-│   ├── 📱 app/                   # App router pages
-│   ├── 🧩 components/            # Reusable UI components
-│   ├── 🔧 lib/                   # Utility libraries
-│   ├── 🎨 styles/                # Global styles
-|   |── 🔒 .env                   # Environment template with Deployed API On Modal.com
-│   ├── 📦 package.json           # Node dependencies
-│   └── ⚙️ next.config.js         # Next.js configuration
-|
-├── 📁 examples/                  # Usage examples
-├── 📄 README.md                  # This file
-```
-
----
-
-## 🔬 Scientific Background
-
-### The Evo2 Model
-
-Evo2 is a state-of-the-art genomic language model developed by the Arc Institute:
-
-- **Training Data:** 300+ billion nucleotides from diverse species
-- **Architecture:** Transformer-based with 7 billion parameters
-- **Context Length:** Up to 131,072 nucleotides (longest in genomics)
-- **Capabilities:** Understands regulatory elements, splice sites, and protein-coding regions
-
-### Validation Methodology
-
-Our validation follows clinical genetics best practices:
-
-1. **Dataset:** 50,000 ClinVar variants with expert consensus
-2. **Metrics:** Accuracy, precision, recall, F1-score
-3. **Benchmarking:** Comparison with CADD, PolyPhen-2, SIFT
-4. **Clinical Correlation:** Concordance with genetic counselor interpretations
-
-### Publication
-
-> **"Evo2: Large-scale Genomic Foundation Models for Variant Effect Prediction"**  
-> _bioRxiv preprint_ | [Read Paper](https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1)
-
----
-
-## 🙏 Acknowledgments
-
-- **[Arc Institute](https://arcinstitute.org/)** - Evo2 model development and genomic AI research
-- **[UCSC Genome Browser](https://genome.ucsc.edu/)** - Genomic data infrastructure and assembly APIs
-- **[NCBI ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)** - Variant classification database and E-utilities
-- **[Modal Labs](https://modal.com/)** - Serverless GPU infrastructure and deployment platform
-- **[FastAPI](https://fastapi.tiangolo.com/)** - High-performance Python web framework
-- **[PyTorch](https://pytorch.org/)** - Deep learning framework for model inference
-- **[NVIDIA](https://www.nvidia.com/)** - H100 GPU technology enabling real-time inference
-- **Open Source Community** - Countless libraries, frameworks, and tools that make this project possible
-
----
-
-<div align="center">
-
-**Making Precision Medicine Accessible to All**
-
-</div>
-
-## ⚠️ **IMPORTANT DEPLOYMENT NOTICE** ⚠️
-
-<div align="center">
-
-> **🚨 ATTENTION: Limited Demo Credits Available on Modal.com 🚨**
-
-</div>
-
-<div align="center">
-
-🚨 Our live demo is running on a limited number of free credits on Modal.com 🚨
-
-## About "Cold Starts"
-The very first analysis after a period of inactivity will experience a "cold start" and may take 40-60 seconds. This is because the serverless container needs to spin up a GPU.
-
-Subsequent analyses will be extremely fast (2-3 seconds). Please be patient on your first try!
-
-If the demo credits are exhausted, the API will not function. Please contact us at ayushkumr1991@gmail.com, and we will gladly provide a new endpoint. Thank you for your understanding!
-</div>
-
-</div>
-# Mutate-Y
-
+⏱️ 7-Minute Presentation Script & Slide Deck
 Slide 1: The Hook (0:00 - 1:00)
 Visual: A large image of a DNA strand with one letter glowing red. Text: Mutation-X: The DNA Interpreter.
 Speaker:
@@ -382,3 +12,59 @@ Visual: Two clocks. One says "28 Days" (Traditional), one says "<30 Seconds" (Mu
 Speaker:
 "The problem isn't the blood test; it's the Interpretation. DNA is a book of 3 billion letters. A single 'A' changing to a 'T' can be the difference between life and death.
 Currently, 45% of genetic results are 'Uncertain.' They are 'Black Boxes.' Experts charge $500 just to look at one variant. This creates a massive inequality where precision medicine is only for the rich. Mutation-X democratizes this."
+
+Slide 3: The Innovation - Evo2 (2:00 - 3:00)
+Visual:
+Speaker:
+"Our secret weapon is Evo2. Unlike old models that just look for 'matches' in a database, Evo2 is a Foundation Model—it is the 'GPT-4 for Biology.'
+It was trained on 300 billion nucleotides. It understands the 'grammar' of life. It can read the 98% of 'Dark Matter' DNA that other tools ignore. We don't just find mutations; we predict their impact on the human body with 92.3% accuracy."
+
+Slide 4: Technical Dominance (3:00 - 4:00)
+Visual:
+Speaker:
+"Technically, we are ahead of the curve. We use the T3 Stack (Next.js 15) for the frontend and Modal for serverless GPU orchestration.
+When a user clicks 'Analyze,' we spin up an NVIDIA H100 GPU in the cloud. It processes 3 billion base pairs in 30 minutes—a task that takes a human expert 45 days. We use the UCSC and NCBI APIs to live-sync with the world’s most trusted medical databases like ClinVar."
+
+Slide 5: Live Demo & Impact (4:00 - 5:30)
+Visual: (Switch to Live Demo or Video)
+Speaker:
+"Let’s look at the BRCA1 gene. At position 43124000, we change an 'A' to a 'T'.
+
+Instant Inference: In under 10 seconds, Evo2 gives us a pathogenicity score.
+
+Clinical Validation: We immediately compare it with ClinVar. It’s a match.
+
+Inclusive Design: We’ve added Voice-Powered Navigation and PDF Reporting. A doctor in Bir Hospital can generate a full clinical report and hand it to a patient before they even leave the clinic."
+
+Slide 6: The Nepal Business Model (5:30 - 6:30)
+Visual: A map of Nepal with pins on major hospitals. Table showing Rs. 32,000 vs. Rs. 1,500.
+Speaker:
+"How does this work in Nepal? We are a B2B Decision Support Tool.
+Labs in Nepal save money on international shipping and expert fees. We charge a flat AI-analysis fee. This allows a test that used to cost Rs. 32,000 to be offered for Rs. 10,000.
+We align with the UN SDGs (Health & Inequality) and the Nepal National AI Policy 2026. We are keeping Nepali data and Nepali money inside Nepal."
+
+Slide 7: The Vision & Q&A (6:30 - 7:00)
+Visual: A 3D human body glowing where the DNA is healthy. Text: Predict. Prevent. Protect.
+Speaker:
+"Judges, we aren't just predicting mutations; we are predicting a future where a child’s rare disease is diagnosed in a day, not a year. Where cancer is caught at Stage 0 because the screening was affordable.
+Mutation-X is the missing piece of Nepal’s digital health infrastructure. Thank you, and we are now ready for your questions."
+
+🎯 Strategic Cheat Sheet for Q&A
+Judge: "What if the AI is wrong?"
+
+"We use a Human-in-the-Loop model. Our AI provides a 'Confidence Score' and an 'Evidence Report.' It doesn't replace the doctor; it acts as an expert assistant that does 40 hours of research in 30 seconds. If the AI is unsure, it flags the variant for manual review."
+https://github.com/Subham130695/Mutate-X?tab=readme-ov-file
+Judge: "How can this work with poor internet in Nepal?"
+
+"Our frontend is a PWA (Progressive Web App) designed to work on low bandwidth. The 'heavy lifting' happens on our Modal H100 servers in the cloud. All the user sends is a tiny text file of the mutation coordinates—less than 1KB of data."
+
+Judge: "Why will the government trust this?"
+
+"Because we use Explainable AI (XAI). We don't just say 'Pathogenic.' We show the ClinVar comparison and the Regulatory Context. We provide the evidence so the Ministry of Health can verify the logic behind every single prediction."
+
+🚀 Final Polish Tips
+Wear something professional: It matches the "Clinical/Medical" vibe of the project.
+
+Bring a Printout: If you can, print one of the AI-Generated PDF Reports from your app and hand it to the lead judge during the demo. It makes the "Digital" project feel "Real."
+
+The "Nepali" Touch: Mention that this helps solve the Thalassemia and Sickle Cell crisis in the Terai region—it shows you care about local problems.
