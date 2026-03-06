@@ -1,5 +1,4 @@
 # 🧬 Mutate-X: Genomic Variant Impact Analyzer powered by Evo2
-
 <div align="center">
 
 ![MutateX](https://img.shields.io/badge/MutateX%20AI-VARIANT%20EFFECT%20PREDICTOR-800080?style=for-the-badge)
@@ -175,6 +174,7 @@ graph TB
 ---
 
 ## 📊 Performance Metrics
+https://github.com/Subham130695/Mutate-X
 
 ### Validation Results
 
@@ -371,3 +371,14 @@ If the demo credits are exhausted, the API will not function. Please contact us 
 
 </div>
 # Mutate-Y
+
+Slide 1: The Hook (0:00 - 1:00)
+Visual: A large image of a DNA strand with one letter glowing red. Text: Mutation-X: The DNA Interpreter.
+Speaker:
+"Good afternoon judges. Imagine a mother in a rural village in Nepal. She’s just been told she might have a genetic risk for breast cancer. She goes to a lab, gives her blood, and is told: 'Wait 4 weeks. Pay 35,000 Rupees. We have to send your data to India or America because we don't have the experts to read it here.' In those 4 weeks, her cancer spreads. In those 4 weeks, her family falls into debt. We are here to end that wait. We are Team Mutate-X, and we have built the first AI-powered Genomic Intelligence platform for Nepal."
+
+Slide 2: The Problem (1:00 - 2:00)
+Visual: Two clocks. One says "28 Days" (Traditional), one says "<30 Seconds" (Mutate-X).
+Speaker:
+"The problem isn't the blood test; it's the Interpretation. DNA is a book of 3 billion letters. A single 'A' changing to a 'T' can be the difference between life and death.
+Currently, 45% of genetic results are 'Uncertain.' They are 'Black Boxes.' Experts charge $500 just to look at one variant. This creates a massive inequality where precision medicine is only for the rich. Mutation-X democratizes this."
